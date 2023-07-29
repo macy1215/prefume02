@@ -1,4 +1,73 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+/*nav*/
+.nav{
+  padding:16px 10px ;
+}
+.logo-img{
+  padding: 9px 0px ;
+}
+.logo a{
+  background-image: url('../assets/images/d’Perfume.png');
+  width: 128px;
+  display: block;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.menu{
+  justify-content: space-between;
+  align-items: center;
+}
+.list li{
+  padding-right: 32px;
+      img{
+        width: 16px;
+        padding-right: 4px;
+      }
+      a{
+        display: block;
+        color:#8D8D8D;
+      }
+      a:hover{
+        color:chocolate;
+        transition: 0.3s;
+      }
+}
+.nav-mobil{
+  display: none;
+}
+
+/*在 iPhone11 直式下變更樣式 */
+@media(max-width: 767px){
+
+  .wrap{
+      max-width:100%;
+      padding:0px 10px;
+    }
+  .nav{
+      display: none;
+    }
+  .nav-mobil{
+      display: block;
+      padding:0px  10px;
+    }
+  .menu{
+      justify-content: space-between;
+      align-items: center;
+  }
+  .list li{
+      padding-right: 0px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  .list li a{
+      padding:0px 10px;
+  
+  }
+  .menu li a:hover{
+      background: #ac8a4654;
+      border-radius: 20px;
+  }
 }

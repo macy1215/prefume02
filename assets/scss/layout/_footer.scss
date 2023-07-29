@@ -1,4 +1,67 @@
+/*footer*/
 .footer{
-  background: #69F0AE;
-  font-size: 64px;
+  background: #916000;
+  padding:20px 0px;
+}
+.footer-nav{
+  justify-content: space-between;
+}
+.logo-copy{
+  justify-content: center;
+  align-items: center;
+}
+.copy{
+  align-items: center;
+}
+.copy a{
+  font-size: 14px;
+  color: #fff;
+  padding-left: 20px;
+}
+.logo-img{
+  padding: 9px 0px ;
+}
+.logo-white a{
+  background-image: url(../assets/images/d’Perfumewhite.png);
+  max-width: 128px;
+  display: block;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.footer-nav ul{
+  justify-content: end;
+  align-items: center;
+}
+.footer-nav ul li:not(:last-child){
+  padding-right: 36px;
+}
+.footer-nav ul li a{
+  color:#fff;
+  font-size: 20px;
+}
+
+@media(max-width: 767px){
+/*footer-mobil*/
+.footer-nav{
+  padding: 0px 10px;
+}
+.logo-copy {
+  justify-content: space-between;
+}
+.logo-white{
+  min-width: 128px;
+
+}
+.footer-list-mobil{
+  display: none;
+}
+.logo-white a {
+  max-width: 100%;
+}
+.copy a{
+  text-align: right
+  ;
+}
 }

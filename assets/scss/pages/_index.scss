@@ -1,3 +1,381 @@
-.index-title {
-  font-size: 100px;
+
+
+.header{
+  background-image: url(../assets/images/index1.jpg);
+  background-size: cover;
+  background-position:  center center;
+  background-repeat: no-repeat;
+}
+
+.banner{
+  padding-top:295px;
+  padding-bottom: 295px;
+  align-items: end;
+  justify-content: end;
+}
+.banner-content{
+  width: 45%;
+        p{
+          line-height: 150%;
+        }
+}
+
+.btn-shopnow{
+  border: 2px solid #fff;
+  width: 70%;
+  margin-top: 16px;
+  border-radius: 30px;
+  opacity: 1;
+        a{
+          display: block;
+          font-size: 28px;
+          text-align: center;
+          padding:13px 0px;
+        }
+}
+
+/*產品列*/
+
+.produce_box {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.content{
+  margin: 0px auto;
+  max-width: 35%;
+  flex-direction: column;
+  justify-content: center;
+
+}
+.cont{
+  line-height: 150%;
+  font-family:sans-serif;
+}
+.more{
+  line-height: 150%; 
+}
+
+.content-img {
+  max-width: 50%;
+  height: 555px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items:start;
+          img{
+            max-width: 100%;
+          }
+}
+
+.content-img2 {
+  max-width: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+          img{
+            max-width: 100%;
+            height: 555px;
+            object-fit: cover;
+            object-position: left center;
+          } 
+}
+
+.content-img-long {
+  max-width: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items:start;
+            img{
+              min-width: 100%;
+              height: 1080px;
+              object-fit: cover;
+            }
+}
+
+.box-content ul{
+  max-width: 50%;
+  margin: 0px auto;
+  flex-direction: column;
+  justify-content: center;
+}
+.pb52{
+  padding-bottom: 52px;
+}
+
+.box-content .box-list{
+  margin: 0px auto;
+  max-width: 60%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.content-list{
+  font-weight: bold;
+}
+
+.plan-btn a{
+  display: block;
+  padding:18px 53px 18px 51px;
+  text-align: center;
+  color:black;
+  border: 2px solid black ;
+  border-radius: 30px;
+          a:hover{
+            border: 2px solid black ;
+            border-radius: 30px;
+            color: #fff;
+            background:black;
+            transition: 0.3s;
+                  }
+}
+
+
+/*hit主打*/
+.produce_hit{
+  background: #E0E0E0;
+  padding:40px 0px;
+}
+.produce_hit li:not(:last-child){
+  margin-right: 30px;
+}
+
+.hit-pic{
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+.hit-pic img{
+  object-fit: cover;
+  max-width: 100%;
+  height: 540px;
+}
+.hit-title{
+  padding-top: 8px;
+  font-weight: bold;
+}
+.price{
+  padding-top: 16px;
+}
+.price-linethrough{
+  color:#8D8D8D;
+  text-decoration: line-through;
+  
+}
+/*瓶子回收活動頁*/
+.recycle-box{
+  padding:60px 0px;
+  justify-content: center;
+}
+.recycle-pic{
+  max-width: 75%;
+  margin-right: 30px;
+}
+.recycle-pic img{
+  max-width: 100%;
+  max-height: auto;
+}
+.recycle-title{
+  font-weight: bold;
+}
+.recycle-sub{
+  font-size: 20px;
+  line-height: 150%;
+  padding-bottom: 16px;
+}
+.recycle-content{
+   max-width: 35%;
+   flex-direction: column;
+   justify-content: center;
+}
+
+/*訂閱*/
+.subscribe{
+  padding-top:312px;
+  padding-bottom: 112px;
+  background-image: url(../assets/images/index10.jpg);
+  background-repeat: no-repeat;
+  background-size:100%;
+  background-position: center center;
+}
+.inputbox{
+  margin-top:20px;
+  align-items: center;
+  width: 35%;
+  border:2px solid #916000;
+  border-radius: 4px;
+  background: #916000;
+}
+.email-input{
+  padding-top:20px;
+  padding-bottom:20px;
+  padding-left: 16px;
+  padding-right: 60px;
+  background: #fff;
+}
+
+.sub-btn{
+  background: #916000;
+}
+
+.sub-btn a{
+  display: block;
+  color: #fff;
+  padding:20px 30px;
+}
+.sub-btn a:hover{
+  color: yellow;
+}
+
+
+ /*在 iPhone11 直式下變更樣式 */
+ @media(max-width: 767px){
+
+  .wrap{
+      max-width:100%;
+      padding:0px 10px;
+    }
+  .nav{
+      display: none;
+    }
+  .nav-mobil{
+      display: block;
+      padding:0px  10px;
+    }
+  .menu{
+      justify-content: space-between;
+      align-items: center;
+  }
+  .list li{
+      padding-right: 0px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  .list li a{
+      padding:0px 10px;
+  
+  }
+  .menu li a:hover{
+      background: #ac8a4654;
+      border-radius: 20px;
+  }
+  .banner{
+    padding-top:100px;
+    padding-bottom: 135px;
+    max-width: 100%;
+    display: block;
+}
+.banner-content {
+    width: 100%;
+}
+.btn-shopnow {
+    width: 100%;
+}
+/*產品手機*/
+.produce_box {
+    padding-top: 8px;
+    padding-bottom: 40px;
+}
+.produce-mobil{
+    flex-direction: column-reverse;
+    max-width: 100%;
+    padding-top: 32px;
+}
+.content {
+    max-width: 100%;
+    padding-top: 8px;
+}
+.content-img {
+    max-width: 100%;
+    height: 350px;
+}
+.content-img2 {
+    max-width: 100%;
+}
+.content-img2 img {
+    max-width: 100%;
+    height: 350px;
+}
+.box-content ul {
+    max-width: 100%;
+}
+.content-img-long {
+    max-width: 100%;
+    height: auto;
+}
+.content-img-long img {
+    max-width: 100%;
+    max-height: 680px;
+}
+.box-list{
+    min-width: 100%;
+}
+.pb52 {
+    padding-bottom: 20px;
+}
+.hit_mobil{
+    flex-direction: column;
+}
+.hit-item-box{
+    padding-bottom: 32px;
+}
+.produce_hit .hit_mobil li{
+    margin-right: 0px;
+}
+.hit-pic{
+    max-width: 100%;
+    height: 350px;
+    overflow: hidden;
+    align-items: end;
+}
+.hit-pic-mobil-pic3{
+    align-items: center;
+}
+.hit-pic img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.recycle-box{
+    flex-direction: column;
+    padding-bottom: 40px;
+}
+.recycle-pic {
+    max-width: 100%;
+    height: 520px;
+    margin-right: 0px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+.recycle-pic img{
+    max-width: 215%;
+    height: auto;
+    object-fit: cover;
+}
+.recycle-content {
+    max-width: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.subscribe {
+    background-size: cover;
+    background-position: 10% 30%;
+}
+.inputbox{
+    min-width: 100%;
+}
+.email-input {
+    padding-right: 60px;
+    padding-left: 14px;
+}
+.sub-btn a{
+    padding:20px 20px;
+}
 }
