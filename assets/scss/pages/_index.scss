@@ -159,6 +159,9 @@
 }
 .price{
   padding-top: 16px;
+    .price-main{
+      padding-right: 8px;
+    }
 }
 .price-linethrough{
   color:#8D8D8D;
@@ -237,6 +240,7 @@
   .wrap{
       max-width:100%;
       padding:0px 10px;
+      margin: 0px auto;
     }
   .nav{
       display: none;

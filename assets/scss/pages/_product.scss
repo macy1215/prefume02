@@ -1,5 +1,6 @@
 .product-nav{
     background: #916000;
+    margin: 0px auto;
     li{
         a{
             display: block;
@@ -12,3 +13,132 @@
         }
     }
 }
+.product-item{
+    padding-top: 80px;
+    padding-bottom: 76px;
+}
+.product-item-box{
+    flex-wrap: wrap;
+    gap:56px 30px;
+    li{
+        max-width: 255px;
+    }
+}
+.item-pro-box{
+    max-width: 100%;
+    height: 255px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    
+}
+.item-pro-box-bottom{
+    max-width: 100%;
+    height: 255px;
+    display: flex;
+    align-items: end;
+    overflow: hidden;
+}
+.item-pro-box-oversize{
+    min-width: 100%;
+    height: 255px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    img{
+        min-width: 150%;;
+    }
+}
+.icon_like{
+    width: 20px;
+    height: 20px;
+    a{
+        display: block;
+        max-width: 100%;
+        height: auto;
+        background: url(../images/iconproductlike.png);
+        background-size: contain;
+        background-position:  center center;
+        background-repeat: no-repeat;
+        padding: 15px 0px;
+    }
+    a:hover{
+        background: url(../images/iconproductlike2.png);
+        background-position:  center center;
+        background-repeat: no-repeat;
+    }
+}
+.icon_cart{
+    width: 20px;
+    height: 20px;
+    a{
+        display: block;
+        min-width: 100%;
+        height: auto;
+        background: url(../images/iconproductcart.png);
+        background-size: contain;
+        background-position:  center center;
+        background-repeat: no-repeat;
+        padding: 15px 0px;
+        margin-left:11px;
+    }
+    a:hover{
+        background: url(../images/iconproductcart2.png);
+        background-position:  center center;
+        background-repeat: no-repeat;
+    }
+}
+.pages_click{
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 60px;
+    li:not(:last-child){
+        padding-right: 20px;
+    }
+    li{
+        a{
+            color:#000000;
+            font-size: 20px;   
+        }
+        a:hover{
+            color:#AC8A46;
+            border-bottom: 1px solid #AC8A46;  
+        }
+    }
+}
+
+/*
+
+*/
+ /*在 iPhone11 直式下變更樣式 */
+ @media(max-width: 767px){
+    h3{
+        font-size: 20px;
+    }
+    .hit-title{
+        padding:2px 0px;
+    }
+    .product-nav{
+        display: none;
+    }
+    .product-item {
+        padding-top: 42px;
+        padding-bottom: 46px;
+        margin: 0px auto;
+    }
+    .product-item-box li {
+        max-width: 165px;
+    }
+    .item-pro-box {
+        height: 165px;
+    }
+    .item-pro-box-bottom {
+        height: 165px;
+    }
+    .item-pro-box-oversize {
+        height: 165px;
+    }
+    .price {
+        padding: 0px;
+    }
+ }
